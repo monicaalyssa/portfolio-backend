@@ -8,7 +8,7 @@ const { Resend } = require('resend');
 const port = process.env.PORT || 5050;
 const app = express();
 
-const allowedOrigins = ['https://monicaalyssa.tech, https://monicaalyssa.vercel.app'];
+const allowedOrigins = ['https://monicaalyssa.tech', 'https://monicaalyssa.vercel.app', 'https://nextjs-portfolio-three-gamma-38.vercel.app'];
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
